@@ -1,0 +1,44 @@
+//
+// Header
+//
+
+@use '../abstracts/variables' as vars;
+
+header {
+  border-bottom: 20px solid vars.$color-green;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1em auto;
+
+    nav {
+      width: 40%;
+      margin-top: 3em;
+  
+      ul {
+        display: flex;
+        justify-content: space-between;
+  
+        li {
+          a {
+            font-size: 32px;
+            font-weight: vars.$font-weight-black;
+            color: vars.$color-black;
+
+            &:hover,
+            &:focus,
+            .active {
+              border-bottom: 5px solid vars.$color-green;
+            }
+          }
+
+          a.active {
+            border-bottom: 5px solid vars.$color-green;
+          }
+        }
+      }
+    }
+  }
+}

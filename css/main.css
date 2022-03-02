@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -335,6 +336,97 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  border-bottom: 20px solid #51B298;
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1em auto;
+}
+header .header-container nav {
+  width: 40%;
+  margin-top: 3em;
+}
+header .header-container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-container nav ul li a {
+  font-size: 32px;
+  font-weight: 900;
+  color: #000000;
+}
+header .header-container nav ul li a:hover, header .header-container nav ul li a:focus,
+header .header-container nav ul li a .active {
+  border-bottom: 5px solid #51B298;
+}
+header .header-container nav ul li a.active {
+  border-bottom: 5px solid #51B298;
+}
+
+.btn-regular {
+  background-color: #51B298;
+  border: none;
+  padding: 0.9em 2.5em;
+}
+.btn-regular a {
+  color: #000000;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.intro {
+  width: 90%;
+  margin: 3em auto;
+  position: relative;
+}
+.intro .text-section h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.intro .text-section h1 .yellow {
+  color: #E6B82B;
+}
+.intro .text-section h1 .green {
+  color: #51B298;
+}
+.intro .text-section h1 .orange {
+  color: #F77E0B;
+}
+.intro .text-section p {
+  width: 35%;
+  font-size: 20px;
+}
+.intro .image-section .img-meeting {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.intro .image-section .img-desk {
+  position: absolute;
+  top: -10px;
+  right: 225px;
+}
+.intro .image-section .img-office {
+  position: absolute;
+  top: 225px;
+  right: -10px;
 }
 
 /*# sourceMappingURL=main.css.map */
