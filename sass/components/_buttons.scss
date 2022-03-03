@@ -4,16 +4,26 @@
 
 @use '../abstracts/variables' as vars;
 
-.btn-regular {
+.btn {
   background-color: vars.$color-green;
   border: none;
+
+  a {
+    color: vars.$color-black;
+    font-weight: vars.$font-weight-black;
+  }
+}
+
+.btn-regular {
   padding: .9em 2.5em;
   // -webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5); 
   // box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
 
   a {
-    color: vars.$color-black;
-    font-weight: vars.$font-weight-black;
     font-size: 16px;
   }
+}
+
+.btn-small {
+  padding: .5em 2em;
 }
