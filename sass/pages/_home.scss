@@ -2,89 +2,89 @@
 // Home
 //
 
+@use '../abstracts/mixins' as mix;
 @use '../abstracts/variables' as vars;
 
 main {
   .intro {
-    width: 90%;
+    width: 85%;
     margin: 3em auto;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+  
+    .image-section {
+      flex-shrink: 0;
+      .home-intro {
+        width: 700px;
+      }
+    }
 
     .text-section {
+      width: 40%;
+      margin-top: -2.5em;
+
       h1 {
-        text-transform: uppercase;
-        font-size: 48px;
-      
-        .yellow {
-          color: vars.$color-yellow;
-        }
-        .green {
-          color: vars.$color-green;
-        }
-        .orange {
-          color: vars.$color-orange;
-        }
+        @include mix.title();
       }
-    
+
       p {
-        width: 35%;
-        font-size: 20px;
-      }
-    }
-
-    
-
-    .image-section {
-      .img-meeting {
-        position: absolute;
-        top: -10px;
-        right: -10px;
-      }
-
-      .img-desk {
-        position: absolute;
-        top: -10px;
-        right: 225px;
-      }
-
-      .img-office {
-        position: absolute;
-        top: 225px;
-        right: -10px;
+        font-size: 16px;
+        margin-top: -1em;
       }
     }
   }
 
-  .orange-block {
-    height: 393px;
-    background-color: vars.$color-orange;
-    margin-top: 20em;
+  .green-block {
+    height: 1200px;
+    background-color: vars.$color-green;
+    width: 12.5%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -2em;
   }
 
-  .workshops-container {
-    background-color: vars.$color-yellow;
-    width: 82.5%;
-    margin-top: -40em;
+  .workshops {
+    h2 {
+      @include mix.title();
+      margin-left: 7em;
+    }
 
-    .workshops-content {
-      padding-left: 10em;
-      padding-top: .5em;
-      padding: .5em 1em 2em 10em;
-
-      h2 {
-        font-size: 49px;
-        font-weight: vars.$font-weight-black;
-        text-transform: uppercase;
-      }
+    .workshops-container {
+      background-color: vars.$color-purple;
+      width: 80%;
+      margin-left: 13.1em;
+      padding: 1em 5em;
 
       .workshops-cards {
         display: flex;
-        justify-content: space-between;
-
-        .workshops-card {
-          width: 33%;
-        }
       }
     }
   }
+
+  // .workshops-container {
+  //   background-color: vars.$color-yellow;
+  //   width: 82.5%;
+  //   margin-top: -40em;
+
+  //   .workshops-content {
+  //     padding-left: 10em;
+  //     padding-top: .5em;
+  //     padding: .5em 1em 2em 10em;
+
+  //     h2 {
+  //       font-size: 49px;
+  //       font-weight: vars.$font-weight-black;
+  //       text-transform: uppercase;
+  //     }
+
+  //     .workshops-cards {
+  //       display: flex;
+  //       justify-content: space-between;
+
+  //       .workshops-card {
+  //         width: 33%;
+  //       }
+  //     }
+  //   }
+  // }
 }

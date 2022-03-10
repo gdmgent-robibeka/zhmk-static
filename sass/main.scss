@@ -1,20 +1,20 @@
 @charset "UTF-8";
 
-// 2. Vendors
+// Vendors
 @use './vendors/normalize';
 
-// 3. Base
+// Base
 @use './base/base';
 @use './base/fonts';
 //@use './base/helpers';
 @use './base/typography';
 
-// 4. Layout
+// Layout
 @use './layout/header';
 @use './layout/footer';
 //@use './layout/grid';
 
-// 5. Components
+// Components
 @use './components/buttons';
 
 // 6. Page-specific

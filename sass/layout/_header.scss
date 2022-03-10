@@ -5,25 +5,35 @@
 @use '../abstracts/variables' as vars;
 
 header {
-  border-bottom: 20px solid vars.$color-green;
-
   .header-container {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
     margin: 1em auto;
 
+    .logo-block {
+      margin-left: 3em;
+
+      .logo {
+        width: 70%;
+      }
+    }
+
     nav {
-      width: 40%;
+      width: 20%;
       margin-top: 3em;
   
       ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
   
         li {
+          &:last-child {
+            margin-left: 20%;
+          }
+
           a {
-            font-size: 32px;
+            font-size: 30px;
             font-weight: vars.$font-weight-black;
             color: vars.$color-black;
 

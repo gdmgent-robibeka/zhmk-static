@@ -10,33 +10,36 @@
 <body>
   <header>
     <div class="header-container">
-      <div class="logo">
+      <div class="logo-block">
         <a href="#">
-          <img src="./images/logo.svg" alt="logo zeg het met kleur">
+          <img src="./images/logo.svg" alt="logo zeg het met kleur" class="logo">
         </a>
       </div>
       
       <nav>
         <ul>
           <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Het Project</a></li>
           <li><a href="#">Workshops</a></li>
-          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  
   <main>
+    <div class="green-block"></div>
+
     <section class="intro">
+      <div class="image-section">
+        <img src="./images/home_intro.png" alt="Person checking colors at a computer" class="home-intro">
+      </div>
+
       <div class="text-section">
         <h1>
-          <span class="yellow">zeg het</span>
-          <span class="green">met</span>
-          <span class="orange">kleur</span>
+          Zeg het met kleur
         </h1>
         <p>
-          ‘Zeg het met kleur’ is een brugproject gefinancierd door het Agentschap Ondernemen. Arteveldehogeschool is projectleider.
+          &lsquo;Zeg het met kleur&rsquo; is een brugproject gefinancierd door het Agentschap Ondernemen. Arteveldehogeschool is projectleider.
           Er wordt samengewerkt met verschillende partners uit het onderwijs en de bedrijfswereld. Bedoeling is om jongeren uit de derde graad van het
           secundair onderwijs (ASO, KSO en TSO), cursisten van het volwassenenonderwijs en hun lesgevers te laten kennismaken met de ontelbare
           facetten van kleur. Op die manier krijgen ze op een toegankelijke en ervaringsgerichte manier inzicht in de mogelijkheden, kansen en
@@ -47,17 +50,54 @@
           <a href="#">Alle Workshops</a>
         </button>
       </div>
+    </section>
 
-      <div class="image-section">
-        <img src="./images/desk.png" alt="Desk with a computer and paper" class="img-desk">
-        <img src="./images/meeting.png" alt="Meeting in an office environment" class="img-meeting">
-        <img src="./images/office.png" alt="Desk in an office setting" class="img-office">
+    <section class="workshops">
+      <h2>Workshops</h2>
+
+      <div class="workshops-container">
+        <div class="workshops-cards">
+          <div class="workshops-card">
+            <img src="./images/home_3d.png" alt="Computer at 3D printer">
+            <h3>Zeg het met 3D</h3>
+            <p>
+              Tijdens deze workshop maak je kennis met 3D-printing. Je leert zelf een object modelleren en klaarmaken om te 
+              3D-printen. Deze workshop is voor de leerlingen van de derde graad secundair onderwijs die geïnteresseerd zijn in 3D-printing.
+            </p>
+            <button class="btn btn-small">
+              <a href="#">Meer info</a>
+            </button>
+          </div>
+
+          <div class="workshops-card">
+            <img src="./images/home_beeld.png" alt="Computer at 3D printer">
+            <h3>Vertel het met... Beeld!</h3>
+            <p>
+              Hoge kwaliteitsvideo’s maken met enkel je smartphone? Het kan! We zien het dagelijks passeren op TikTok en Reels, 
+              maar in deze workshop word ook jij de content creator van de toekomst. Monteren en bewerken met niks anders dan je smartphone? 
+              Yes, we can!
+            </p>
+            <button class="btn btn-small">
+              <a href="#">Meer info</a>
+            </button>
+          </div>
+
+          <div class="workshops-card">
+            <img src="./images/home_code.png" alt="Computer at 3D printer">
+            <h3>Start-to-Code: Creative Programming</h3>
+            <p>
+              Deze workshop zoomt in op het leren programmeren door creatieve, visuele en interactieve objecten te maken binnen een 
+              webpagina m.b.v. web technologieën: HTML, CSS en JavaScript.
+            </p>
+            <button class="btn btn-small">
+              <a href="#">Meer info</a>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <div class="orange-block"></div>
-
-    <section class="workshops-container">
+    <!-- <section class="workshops-container">
       <div class="workshops-content">
         <h2>Workshops</h2>
 
@@ -100,7 +140,7 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 </body>
 </html>

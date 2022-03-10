@@ -1,0 +1,11 @@
+//
+// Mixins
+//
+
+@use './variables' as vars;
+
+@mixin title($color: vars.$color-purple) {
+  text-transform: uppercase;
+  color: $color;
+  font-size: 48px;
+}
