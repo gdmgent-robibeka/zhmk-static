@@ -2,6 +2,7 @@
 // Home
 //
 
+@use '../abstracts/mediamixins' as media;
 @use '../abstracts/mixins' as mix;
 @use '../abstracts/variables' as vars;
 
@@ -34,29 +35,45 @@ main {
     }
   }
 
-  .green-block {
-    height: 1200px;
-    background-color: vars.$color-green;
+  .orange-block {
+    height: 980px;
+    background-color: vars.$color-orange;
     width: 12.5%;
     position: absolute;
     z-index: -1;
     margin-top: -2em;
   }
 
+  @include media.small {
+    .orange-block {
+      background-color: vars.$color-green;
+    }
+  }
+
   .workshops {
     h2 {
-      @include mix.title();
+      @include mix.title(vars.$color-gray);
       margin-left: 7em;
     }
 
     .workshops-container {
-      background-color: vars.$color-purple;
-      width: 80%;
+      background-color: vars.$color-gray;
+      width: 75%;
       margin-left: 13.1em;
-      padding: 1em 5em;
+      margin-top: -1em;
+      padding: 2em 0 2em 7.5em;
 
       .workshops-cards {
         display: flex;
+        justify-content: space-between;
+
+        .workshops-card {
+          width: 33%;
+
+          p {
+            width: 90%;
+          }
+        }
       }
     }
   }

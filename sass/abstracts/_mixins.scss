@@ -4,7 +4,7 @@
 
 @use './variables' as vars;
 
-@mixin title($color: vars.$color-purple) {
+@mixin title($color: vars.$color-orange) {
   text-transform: uppercase;
   color: $color;
   font-size: 48px;

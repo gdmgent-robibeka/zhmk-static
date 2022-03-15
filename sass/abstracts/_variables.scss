@@ -2,14 +2,22 @@
 // Variables
 //
 
-$text-font: 'Roboto', sans-serif;
+// Font-family
+$text-font: 'Source Sans Pro', sans-serif;
 
+// Font-weight
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 $font-weight-black: 900;
 
+// Color
 $color-black: #000000;
 $color-green: #00B5A9;
 $color-yellow: #E6B82B;
-$color-orange: #F77E0B;
+$color-orange: #F69142;
 $color-purple: #816CCE;
+$color-gray: #AAB8CB;
+
+// Screen Size
+$width-small: 768px;
+$width-large: 1024px;

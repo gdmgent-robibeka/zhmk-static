@@ -1,0 +1,23 @@
+//
+// Media Queries
+//
+
+@use './variables' as vars;
+
+@mixin small {
+  @media (max-width: #{vars.$width-small - 1px}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{vars.$width-small}) and (max-width: #{vars.$width-large - 1px}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{vars.$width-large}) {
+    @content;
+  }
+}
