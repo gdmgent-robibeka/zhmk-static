@@ -40,12 +40,12 @@ header {
             &:hover,
             &:focus,
             .active {
-              border-bottom: 5px solid vars.$color-green;
+              border-bottom: 5px solid vars.$color-orange;
             }
           }
 
           a.active {
-            border-bottom: 5px solid vars.$color-green;
+            border-bottom: 5px solid vars.$color-orange;
           }
         }
       }

@@ -44,12 +44,6 @@ main {
     margin-top: -2em;
   }
 
-  @include media.small {
-    .orange-block {
-      background-color: vars.$color-green;
-    }
-  }
-
   .workshops {
     h2 {
       @include mix.title(vars.$color-gray);
@@ -59,7 +53,7 @@ main {
     .workshops-container {
       background-color: vars.$color-gray;
       width: 75%;
-      margin-left: 13.1em;
+      margin-left: 12.5%;
       margin-top: -1em;
       padding: 2em 0 2em 7.5em;
 
@@ -78,30 +72,73 @@ main {
     }
   }
 
-  // .workshops-container {
-  //   background-color: vars.$color-yellow;
-  //   width: 82.5%;
-  //   margin-top: -40em;
+  .team {
+    h2 {
+      @include mix.title();
+      text-align: center;
+      margin-top: 2em;
+    }
 
-  //   .workshops-content {
-  //     padding-left: 10em;
-  //     padding-top: .5em;
-  //     padding: .5em 1em 2em 10em;
+    h3 {
+      text-align: center;
+      margin-top: -1.5em;
+      font-size: 20px;
+    }
 
-  //     h2 {
-  //       font-size: 49px;
-  //       font-weight: vars.$font-weight-black;
-  //       text-transform: uppercase;
-  //     }
+    .team-container {
+      width: 90%;
+      margin: 10em auto 0 auto;
 
-  //     .workshops-cards {
-  //       display: flex;
-  //       justify-content: space-between;
+      .team-cards {
+        display: flex;
+        justify-content: space-between;
+  
+        .team-card {
+          width: 15em;
 
-  //       .workshops-card {
-  //         width: 33%;
-  //       }
-  //     }
-  //   }
-  // }
+          img {
+            margin-top: -7.5em;
+            width: 15em;
+          }
+
+          &:nth-child(odd) {
+            background-color: vars.$color-gray;
+          }
+          
+          &:nth-child(even) {
+            background-color: vars.$color-orange;
+          }
+
+          .info {
+            width: 90%;
+            margin: -1em auto 0 auto;
+
+            .name {
+              font-size: 25px;
+              font-weight: vars.$font-weight-bold;
+            }
+
+            h5 {
+              font-size: 18px;
+              font-weight: vars.$font-weight-bold;
+            }
+
+            ul {
+              list-style-type: "- ";
+              margin-left: -2em;
+              margin-top: -1.5em;
+              li {
+                font-size: 18px;
+              }
+            }
+
+            p {
+              font-size: 18px;
+              margin-top: -1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
 }

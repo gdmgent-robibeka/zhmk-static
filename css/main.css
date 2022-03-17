@@ -380,10 +380,47 @@ header .header-container nav ul li a {
 }
 header .header-container nav ul li a:hover, header .header-container nav ul li a:focus,
 header .header-container nav ul li a .active {
-  border-bottom: 5px solid #00B5A9;
+  border-bottom: 5px solid #F69142;
 }
 header .header-container nav ul li a.active {
-  border-bottom: 5px solid #00B5A9;
+  border-bottom: 5px solid #F69142;
+}
+
+footer {
+  background-color: #F69142;
+  margin-top: 5em;
+}
+footer .footer-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0 2em 0;
+}
+footer .footer-container h2 {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 48px;
+}
+footer .footer-container ul {
+  padding: 0;
+  margin: -1em 0 2em 0;
+}
+footer .footer-container ul li {
+  display: inline;
+  padding-right: 1em;
+}
+footer .footer-container ul li a {
+  color: #FFFFFF;
+  font-size: 32px;
+}
+footer .footer-container ul li a:hover, footer .footer-container ul li a:focus {
+  border-bottom: 3px solid #FFFFFF;
+}
+footer .footer-container ul li a.active {
+  border-bottom: 3px solid #FFFFFF;
+}
+footer .footer-container p {
+  font-size: 16px;
+  color: #FFFFFF;
 }
 
 .btn {
@@ -439,11 +476,6 @@ main .orange-block {
   z-index: -1;
   margin-top: -2em;
 }
-@media (max-width: 767px) {
-  main .orange-block {
-    background-color: #00B5A9;
-  }
-}
 main .workshops h2 {
   text-transform: uppercase;
   color: #AAB8CB;
@@ -453,7 +485,7 @@ main .workshops h2 {
 main .workshops .workshops-container {
   background-color: #AAB8CB;
   width: 75%;
-  margin-left: 13.1em;
+  margin-left: 12.5%;
   margin-top: -1em;
   padding: 2em 0 2em 7.5em;
 }
@@ -466,6 +498,63 @@ main .workshops .workshops-container .workshops-cards .workshops-card {
 }
 main .workshops .workshops-container .workshops-cards .workshops-card p {
   width: 90%;
+}
+main .team h2 {
+  text-transform: uppercase;
+  color: #F69142;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 2em;
+}
+main .team h3 {
+  text-align: center;
+  margin-top: -1.5em;
+  font-size: 20px;
+}
+main .team .team-container {
+  width: 90%;
+  margin: 10em auto 0 auto;
+}
+main .team .team-container .team-cards {
+  display: flex;
+  justify-content: space-between;
+}
+main .team .team-container .team-cards .team-card {
+  width: 15em;
+}
+main .team .team-container .team-cards .team-card img {
+  margin-top: -7.5em;
+  width: 15em;
+}
+main .team .team-container .team-cards .team-card:nth-child(odd) {
+  background-color: #AAB8CB;
+}
+main .team .team-container .team-cards .team-card:nth-child(even) {
+  background-color: #F69142;
+}
+main .team .team-container .team-cards .team-card .info {
+  width: 90%;
+  margin: -1em auto 0 auto;
+}
+main .team .team-container .team-cards .team-card .info .name {
+  font-size: 25px;
+  font-weight: 700;
+}
+main .team .team-container .team-cards .team-card .info h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+main .team .team-container .team-cards .team-card .info ul {
+  list-style-type: "- ";
+  margin-left: -2em;
+  margin-top: -1.5em;
+}
+main .team .team-container .team-cards .team-card .info ul li {
+  font-size: 18px;
+}
+main .team .team-container .team-cards .team-card .info p {
+  font-size: 18px;
+  margin-top: -1.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

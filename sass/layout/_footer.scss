@@ -1,0 +1,51 @@
+//
+// Footer
+//
+
+@use '../abstracts/variables' as vars;
+
+footer {
+  background-color: vars.$color-orange;
+  margin-top: 5em;
+  
+  .footer-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 0 2em 0;
+
+    h2 {
+      color: vars.$color-white;
+      font-weight: vars.$font-weight-black;
+      font-size: 48px;
+    }
+
+    ul {
+      padding: 0;
+      margin: -1em 0 2em 0;
+
+      li {
+        display: inline;
+        padding-right: 1em;
+
+        a {
+          color: vars.$color-white;
+          font-size: 32px;
+
+          &:hover,
+          &:focus {
+            border-bottom: 3px solid vars.$color-white;
+          }
+        }
+        
+        a.active {
+          border-bottom: 3px solid vars.$color-white;
+        }
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: vars.$color-white;
+    }
+  }
+}
