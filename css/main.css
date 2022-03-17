@@ -363,7 +363,7 @@ header .header-container .logo-block .logo {
   width: 70%;
 }
 header .header-container nav {
-  width: 20%;
+  width: 30%;
   margin-top: 3em;
 }
 header .header-container nav ul {
@@ -377,13 +377,45 @@ header .header-container nav ul li a {
   font-size: 30px;
   font-weight: 900;
   color: #000000;
+  padding: 0.05em 0.5em;
+  border-radius: 0.3em;
+  position: relative;
 }
-header .header-container nav ul li a:hover, header .header-container nav ul li a:focus,
-header .header-container nav ul li a .active {
-  border-bottom: 5px solid #F69142;
+header .header-container nav ul li a:hover, header .header-container nav ul li a:focus {
+  background-color: #F69142;
+  color: #FFFFFF;
+}
+header .header-container nav ul li a:hover::after, header .header-container nav ul li a:focus::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: #F69142;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
 }
 header .header-container nav ul li a.active {
-  border-bottom: 5px solid #F69142;
+  background-color: #F69142;
+  color: #FFFFFF;
+}
+header .header-container nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: #F69142;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
 }
 
 footer {
@@ -426,6 +458,9 @@ footer .footer-container p {
 .btn {
   background-color: #F69142;
   border: none;
+}
+.btn:hover a, .btn:focus a {
+  color: #FFFFFF;
 }
 .btn a {
   color: #000000;

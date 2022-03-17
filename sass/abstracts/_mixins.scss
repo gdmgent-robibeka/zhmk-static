@@ -9,3 +9,18 @@
   color: $color;
   font-size: 48px;
 }
+
+@mixin speechbubble($color: vars.$color-orange) {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: $color;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
+}

@@ -2,6 +2,7 @@
 // Header
 //
 
+@use '../abstracts//mixins' as mix;
 @use '../abstracts/variables' as vars;
 
 header {
@@ -20,7 +21,7 @@ header {
     }
 
     nav {
-      width: 20%;
+      width: 30%;
       margin-top: 3em;
   
       ul {
@@ -36,16 +37,30 @@ header {
             font-size: 30px;
             font-weight: vars.$font-weight-black;
             color: vars.$color-black;
+            padding: .05em .5em;
+            border-radius: .3em;
+            position: relative;
 
             &:hover,
-            &:focus,
-            .active {
-              border-bottom: 5px solid vars.$color-orange;
+            &:focus {
+              // border-bottom: 5px solid vars.$color-orange;
+              background-color: vars.$color-orange;
+              color: vars.$color-white;
+              
+              &::after {
+                @include mix.speechbubble();
+              }
             }
           }
 
           a.active {
-            border-bottom: 5px solid vars.$color-orange;
+            //border-bottom: 5px solid vars.$color-orange;
+            background-color: vars.$color-orange;
+            color: vars.$color-white;
+
+            &::after {
+              @include mix.speechbubble();
+            }
           }
         }
       }
