@@ -577,6 +577,10 @@ main.homepage .team .team-container .team-cards .team-card {
 main.homepage .team .team-container .team-cards .team-card img {
   margin-top: -7.5em;
   width: 15em;
+  height: 15em;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 0 0;
 }
 main.homepage .team .team-container .team-cards .team-card .info {
   width: 90%;
@@ -651,7 +655,6 @@ main.overview-page .workshops-container .workshop {
 }
 main.overview-page .workshops-container .workshop img {
   max-width: 100%;
-  height: auto;
 }
 main.overview-page .workshops-container .workshop .category {
   position: absolute;
