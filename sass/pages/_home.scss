@@ -37,7 +37,7 @@ main.homepage {
 
   .orange-block {
     height: 980px;
-    background-color: vars.$color-orange-light;
+    background-color: vars.$color-orange-medium;
     width: 12.5%;
     position: absolute;
     z-index: -1;
@@ -111,7 +111,7 @@ main.homepage {
   
         .team-card {
           width: 15em;
-          background-color: vars.$color-orange-light;
+          background-color: vars.$color-orange-medium;
           padding-bottom: 5em;
 
           img {

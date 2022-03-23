@@ -5,7 +5,7 @@
 @use '../abstracts/mixins' as mix;
 @use '../abstracts/variables' as vars;
 
-main.overview-page {
+section.intro {
   h1 {
     @include mix.title();
     text-align: center;
@@ -19,12 +19,9 @@ main.overview-page {
       margin: 0 auto;
       padding: 2em 0;
       display: flex;
-      justify-content: space-between;
 
-      .searchbar-right {
-        display: flex;
-        justify-content: space-between;
-        width: 28.5em;
+      .keyword {
+        margin-right: 2em;
       }
     }
     
@@ -39,5 +36,52 @@ main.overview-page {
       width: 12.5em;
     }
   }
+}
 
+main.overview-page {
+  width: 90%;
+  margin: 0 auto;
+
+  .workshops-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8em 1em;
+    margin-top: 3em;
+
+    .workshop {
+      width: 100%;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .title {
+        font-size: 28px;
+        font-weight: vars.$font-weight-bold;
+      }
+
+      .subtitle {
+        font-size: 25px;
+        font-weight: vars.$font-weight-bold;
+        margin-top: -1em;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .bold {
+        font-weight: vars.$font-weight-bold;
+      }
+
+      // a {
+      //   color: vars.$color-black;
+      // }
+
+      .btn {
+        margin-top: 1em;
+      }
+    }
+  }
 }

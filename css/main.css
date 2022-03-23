@@ -462,7 +462,7 @@ footer .footer-container p {
 }
 .btn:hover, .btn:focus {
   background-color: #F69142;
-  border: none;
+  border: 3px solid #F69142;
 }
 .btn a {
   color: #000000;
@@ -607,35 +607,68 @@ main.homepage .team .team-container .team-cards .team-card .info p {
   margin-top: -1.5em;
 }
 
-main.overview-page h1 {
+section.intro h1 {
   text-transform: uppercase;
   color: #000000;
   font-size: 48px;
   text-align: center;
 }
-main.overview-page .searchbar {
+section.intro .searchbar {
   background-color: #DBDFE6;
 }
-main.overview-page .searchbar-container {
+section.intro .searchbar-container {
   width: 90%;
   margin: 0 auto;
   padding: 2em 0;
   display: flex;
-  justify-content: space-between;
 }
-main.overview-page .searchbar-container .searchbar-right {
-  display: flex;
-  justify-content: space-between;
-  width: 28.5em;
+section.intro .searchbar-container .keyword {
+  margin-right: 2em;
 }
-main.overview-page .searchbar label {
+section.intro .searchbar label {
   display: block;
   font-size: 20px;
   font-weight: 700;
 }
-main.overview-page .searchbar input,
-main.overview-page .searchbar select {
+section.intro .searchbar input,
+section.intro .searchbar select {
   width: 12.5em;
+}
+
+main.overview-page {
+  width: 90%;
+  margin: 0 auto;
+}
+main.overview-page .workshops-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8em 1em;
+  margin-top: 3em;
+}
+main.overview-page .workshops-container .workshop {
+  width: 100%;
+}
+main.overview-page .workshops-container .workshop img {
+  max-width: 100%;
+  height: auto;
+}
+main.overview-page .workshops-container .workshop .title {
+  font-size: 28px;
+  font-weight: 700;
+}
+main.overview-page .workshops-container .workshop .subtitle {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: -1em;
+}
+main.overview-page .workshops-container .workshop p {
+  font-size: 18px;
+}
+main.overview-page .workshops-container .workshop .bold {
+  font-weight: 700;
+}
+main.overview-page .workshops-container .workshop .btn {
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */

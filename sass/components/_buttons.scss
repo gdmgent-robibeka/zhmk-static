@@ -11,7 +11,7 @@
   &:hover,
   &:focus {
     background-color: vars.$color-orange-dark;
-    border: none;
+    border: 3px solid vars.$color-orange-dark;
   }
 
   a {
