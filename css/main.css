@@ -700,4 +700,157 @@ main.overview-page .workshops-container .workshop .btn {
   margin-top: 1em;
 }
 
+main.detail-page {
+  margin-top: 3em;
+}
+main.detail-page .orange-block {
+  height: 980px;
+  background-color: #F9B784;
+  width: 12.5%;
+  position: absolute;
+  z-index: -1;
+  margin-top: -2em;
+}
+main.detail-page .info-container {
+  width: 85%;
+  margin: 0 auto;
+}
+main.detail-page .info-container .return {
+  margin-left: 7em;
+  color: #000000;
+}
+main.detail-page section.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-right: 10em;
+}
+main.detail-page section.info .image-section {
+  width: 60%;
+}
+main.detail-page section.info .image-section .top {
+  margin-bottom: 1em;
+}
+main.detail-page section.info .image-section .top img {
+  width: 100%;
+}
+main.detail-page section.info .image-section .bottom {
+  display: flex;
+}
+main.detail-page section.info .image-section .bottom .img-small2 {
+  width: 72%;
+  margin-left: 1em;
+}
+main.detail-page section.info .text-section {
+  width: 30%;
+}
+main.detail-page section.info .text-section h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: -1em;
+}
+main.detail-page section.info .text-section .intro {
+  font-size: 20px;
+}
+main.detail-page section.info .text-section p {
+  font-size: 18px;
+}
+main.detail-page section.info .text-section p .bold {
+  font-weight: 700;
+}
+
+.form-section h2 {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  margin-top: 3em;
+  margin-left: 9.5em;
+}
+.form-section .form-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #DBDFE6;
+  width: 95%;
+  padding: 3em 3em 3em 0;
+}
+.form-section .form-container .img {
+  width: 25%;
+}
+.form-section .form-container .img img {
+  width: 100%;
+}
+.form-section .form-container form {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.form-section .form-container form .personal {
+  width: 50%;
+}
+.form-section .form-container form .personal label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+.form-section .form-container form .personal > div {
+  margin-bottom: 1em;
+}
+.form-section .form-container form .personal input {
+  width: 72.5%;
+}
+.form-section .form-container form .personal input::placeholder {
+  font-size: 18px;
+  color: #91A1BB;
+  padding: 0 0.5em;
+}
+.form-section .form-container form .personal .available-options select {
+  min-width: 22.5%;
+}
+.form-section .form-container form .personal .citycode {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.form-section .form-container form .personal .citycode .postal_code,
+.form-section .form-container form .personal .citycode .city {
+  width: 20%;
+}
+.form-section .form-container form .personal .citycode .postal_code input,
+.form-section .form-container form .personal .citycode .city input {
+  width: 325%;
+}
+.form-section .form-container form .workshop-selection {
+  width: 50%;
+}
+.form-section .form-container form .workshop-selection .location {
+  margin-top: 4.5em;
+  margin-bottom: 3em;
+}
+.form-section .form-container form .workshop-selection .location label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+.form-section .form-container form .workshop-selection .location select {
+  width: 80%;
+}
+.form-section .form-container form .workshop-selection .remarks {
+  margin-bottom: 3em;
+}
+.form-section .form-container form .workshop-selection .remarks label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+.form-section .form-container form .workshop-selection .remarks textarea {
+  width: 80%;
+}
+.form-section .form-container .practical {
+  width: 20%;
+}
+.form-section .bold {
+  font-weight: 700;
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */

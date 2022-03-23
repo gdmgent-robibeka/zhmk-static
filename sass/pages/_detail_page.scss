@@ -1,0 +1,196 @@
+//
+// Workshop Detail Page
+//
+
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as vars;
+
+main.detail-page {
+  margin-top: 3em;
+
+  .orange-block {
+    height: 980px;
+    background-color: vars.$color-orange-medium;
+    width: 12.5%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -2em;
+  }
+
+  .info-container {
+    width: 85%;
+    margin: 0 auto;
+
+    .return {
+      margin-left: 7em;
+      color: vars.$color-black;
+    }
+  }
+
+  section.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-right: 10em;
+
+    .image-section {
+      width: 60%;
+      .top {
+        margin-bottom: 1em;
+        img {
+          width: 100%;
+        }
+      }
+
+      .bottom {
+        display: flex;
+
+        .img-small2 {
+          width: 72%;
+          margin-left: 1em;
+        }
+      }
+    }
+
+    .text-section {
+      width: 30%;
+
+      h1 {
+        font-size: 45px;
+        font-weight: vars.$font-weight-bold;
+        margin-top: -1em;
+      }
+
+      .intro {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 18px;
+
+        .bold {
+          font-weight: vars.$font-weight-bold;
+        }
+      }
+    }
+  }
+}
+
+.form-section {
+  h2 {
+    @include mix.title();
+    margin-top: 3em;
+    margin-left: 9.5em;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: vars.$color-gray-light;
+    width: 95%;
+    padding: 3em 3em 3em 0;
+
+    .img {
+      width: 25%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+      .personal {
+        width: 50%;
+
+        label {
+          display: block;
+          font-size: 20px;
+          font-weight: vars.$font-weight-bold;
+        }
+
+        > div {
+          margin-bottom: 1em;
+        }
+
+        input {
+          width: 72.5%;
+  
+          &::placeholder {
+            font-size: 18px;
+            color: vars.$color-gray-dark;
+            padding: 0 .5em;
+          }
+        }
+
+        .available-options {
+          select {
+            min-width: 22.5%;
+          }
+        }
+
+        .citycode {
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+
+          .postal_code,
+          .city {
+            width: 20%;
+            
+            input {
+              width: 325%;
+            }
+          }
+        }
+      }
+
+      .workshop-selection {
+        width: 50%;
+
+        .location {
+          margin-top: 4.5em;
+          margin-bottom: 3em;
+
+          label {
+            display: block;
+            font-size: 20px;
+            font-weight: vars.$font-weight-bold;
+          }
+
+          select {
+            width: 80%;
+          }
+        }
+
+        .remarks {
+          margin-bottom: 3em;
+
+          label {
+            display: block;
+            font-size: 20px;
+            font-weight: vars.$font-weight-bold;
+          }
+
+          textarea {
+            width: 80%;
+          }
+        }
+      }
+
+      
+    }
+
+    .practical {
+      width: 20%;
+    }
+  }
+
+  .bold {
+    font-weight: vars.$font-weight-bold;
+    font-size: 20px;
+  }
+}
