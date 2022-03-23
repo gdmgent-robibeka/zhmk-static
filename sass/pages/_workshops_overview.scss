@@ -39,21 +39,39 @@ section.intro {
 }
 
 main.overview-page {
-  width: 90%;
-  margin: 0 auto;
-
   .workshops-container {
+    width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8em 1em;
     margin-top: 3em;
+    z-index: 1;
+    position: relative;
 
     .workshop {
       width: 100%;
-
+      position: relative;
+      
       img {
         max-width: 100%;
         height: auto;
+      }
+
+      .category {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        background-color: vars.$color-purple;
+        color: vars.$color-white;
+        padding: .2em 1.5em;
+        font-size: 25px;
+        font-weight: vars.$font-weight-black;
+        border-radius: .3em;
+
+        &::after {
+          @include mix.speechbubble-right(vars.$color-purple);
+        }
       }
 
       .title {
