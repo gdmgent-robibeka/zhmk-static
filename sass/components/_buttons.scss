@@ -5,14 +5,13 @@
 @use '../abstracts/variables' as vars;
 
 .btn {
-  background-color: vars.$color-orange;
-  border: none;
+  border: 3px solid vars.$color-black;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    a {
-      color: vars.$color-white;
-    }
+    background-color: vars.$color-orange-dark;
+    border: none;
   }
 
   a {

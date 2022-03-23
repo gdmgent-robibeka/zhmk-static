@@ -419,7 +419,7 @@ header .header-container nav ul li a.active::after {
 }
 
 footer {
-  background-color: #F69142;
+  background-color: #91A1BB;
   margin-top: 5em;
 }
 footer .footer-container {
@@ -431,6 +431,7 @@ footer .footer-container h2 {
   color: #FFFFFF;
   font-weight: 900;
   font-size: 48px;
+  text-transform: capitalize;
 }
 footer .footer-container ul {
   padding: 0;
@@ -445,22 +446,23 @@ footer .footer-container ul li a {
   font-size: 32px;
 }
 footer .footer-container ul li a:hover, footer .footer-container ul li a:focus {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
 }
 footer .footer-container ul li a.active {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
 }
 footer .footer-container p {
-  font-size: 16px;
+  font-size: 20px;
   color: #FFFFFF;
 }
 
 .btn {
+  border: 3px solid #000000;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
   background-color: #F69142;
   border: none;
-}
-.btn:hover a, .btn:focus a {
-  color: #FFFFFF;
 }
 .btn a {
   color: #000000;
@@ -478,118 +480,162 @@ footer .footer-container p {
   padding: 0.5em 2em;
 }
 
-main .intro {
+main.homepage .intro {
   width: 85%;
   margin: 3em auto;
   display: flex;
   justify-content: space-between;
 }
-main .intro .image-section {
+main.homepage .intro .image-section {
   flex-shrink: 0;
 }
-main .intro .image-section .home-intro {
+main.homepage .intro .image-section .home-intro {
   width: 700px;
 }
-main .intro .text-section {
+main.homepage .intro .text-section {
   width: 40%;
   margin-top: -2.5em;
 }
-main .intro .text-section h1 {
+main.homepage .intro .text-section h1 {
   text-transform: uppercase;
-  color: #F69142;
+  color: #000000;
   font-size: 48px;
 }
-main .intro .text-section p {
+main.homepage .intro .text-section p {
   font-size: 16px;
   margin-top: -1em;
 }
-main .orange-block {
+main.homepage .orange-block {
   height: 980px;
-  background-color: #F69142;
+  background-color: #F9B784;
   width: 12.5%;
   position: absolute;
   z-index: -1;
   margin-top: -2em;
 }
-main .workshops h2 {
+main.homepage .workshops h2 {
   text-transform: uppercase;
-  color: #AAB8CB;
+  color: #000000;
   font-size: 48px;
   margin-left: 7em;
 }
-main .workshops .workshops-container {
-  background-color: #AAB8CB;
+main.homepage .workshops .workshops-container {
+  background-color: #DBDFE6;
   width: 75%;
   margin-left: 12.5%;
   margin-top: -1em;
   padding: 2em 0 2em 7.5em;
 }
-main .workshops .workshops-container .workshops-cards {
+main.homepage .workshops .workshops-container .workshops-cards {
   display: flex;
   justify-content: space-between;
 }
-main .workshops .workshops-container .workshops-cards .workshops-card {
+main.homepage .workshops .workshops-container .workshops-cards .workshops-card {
   width: 33%;
 }
-main .workshops .workshops-container .workshops-cards .workshops-card p {
+main.homepage .workshops .workshops-container .workshops-cards .workshops-card p {
   width: 90%;
 }
-main .team h2 {
+main.homepage .team h2 {
   text-transform: uppercase;
-  color: #F69142;
+  color: #000000;
   font-size: 48px;
   text-align: center;
   margin-top: 2em;
 }
-main .team h3 {
-  text-align: center;
-  margin-top: -1.5em;
-  font-size: 20px;
+main.homepage .team .dots {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em auto;
+  width: 4.5%;
 }
-main .team .team-container {
+main.homepage .team .dots .dot {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
+  box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
+}
+main.homepage .team .dots .active,
+main.homepage .team .dots .dot:hover {
+  background-color: #F69142;
+  border: none;
+}
+main.homepage .team .team-container {
   width: 90%;
   margin: 10em auto 0 auto;
 }
-main .team .team-container .team-cards {
+main.homepage .team .team-container .team-cards {
   display: flex;
   justify-content: space-between;
 }
-main .team .team-container .team-cards .team-card {
+main.homepage .team .team-container .team-cards .team-card {
   width: 15em;
+  background-color: #F9B784;
+  padding-bottom: 5em;
 }
-main .team .team-container .team-cards .team-card img {
+main.homepage .team .team-container .team-cards .team-card img {
   margin-top: -7.5em;
   width: 15em;
 }
-main .team .team-container .team-cards .team-card:nth-child(odd) {
-  background-color: #AAB8CB;
-}
-main .team .team-container .team-cards .team-card:nth-child(even) {
-  background-color: #F69142;
-}
-main .team .team-container .team-cards .team-card .info {
+main.homepage .team .team-container .team-cards .team-card .info {
   width: 90%;
   margin: -1em auto 0 auto;
 }
-main .team .team-container .team-cards .team-card .info .name {
+main.homepage .team .team-container .team-cards .team-card .info .firstname,
+main.homepage .team .team-container .team-cards .team-card .info .lastname {
   font-size: 25px;
   font-weight: 700;
 }
-main .team .team-container .team-cards .team-card .info h5 {
-  font-size: 18px;
+main.homepage .team .team-container .team-cards .team-card .info .lastname {
+  margin-top: -1.2em;
+}
+main.homepage .team .team-container .team-cards .team-card .info h5 {
+  font-size: 24px;
   font-weight: 700;
 }
-main .team .team-container .team-cards .team-card .info ul {
-  list-style-type: "- ";
-  margin-left: -2em;
+main.homepage .team .team-container .team-cards .team-card .info ul {
+  list-style-type: disc;
+  margin-left: -1em;
   margin-top: -1.5em;
 }
-main .team .team-container .team-cards .team-card .info ul li {
+main.homepage .team .team-container .team-cards .team-card .info ul li {
   font-size: 18px;
 }
-main .team .team-container .team-cards .team-card .info p {
+main.homepage .team .team-container .team-cards .team-card .info p {
   font-size: 18px;
   margin-top: -1.5em;
+}
+
+main.overview-page h1 {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  text-align: center;
+}
+main.overview-page .searchbar {
+  background-color: #DBDFE6;
+}
+main.overview-page .searchbar-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+main.overview-page .searchbar-container .searchbar-right {
+  display: flex;
+  justify-content: space-between;
+  width: 28.5em;
+}
+main.overview-page .searchbar label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+main.overview-page .searchbar input,
+main.overview-page .searchbar select {
+  width: 12.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

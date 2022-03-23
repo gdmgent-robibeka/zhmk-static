@@ -6,7 +6,7 @@
 @use '../abstracts/mixins' as mix;
 @use '../abstracts/variables' as vars;
 
-main {
+main.homepage {
   .intro {
     width: 85%;
     margin: 3em auto;
@@ -37,7 +37,7 @@ main {
 
   .orange-block {
     height: 980px;
-    background-color: vars.$color-orange;
+    background-color: vars.$color-orange-light;
     width: 12.5%;
     position: absolute;
     z-index: -1;
@@ -46,12 +46,12 @@ main {
 
   .workshops {
     h2 {
-      @include mix.title(vars.$color-gray);
+      @include mix.title();
       margin-left: 7em;
     }
 
     .workshops-container {
-      background-color: vars.$color-gray;
+      background-color: vars.$color-gray-light;
       width: 75%;
       margin-left: 12.5%;
       margin-top: -1em;
@@ -79,10 +79,26 @@ main {
       margin-top: 2em;
     }
 
-    h3 {
-      text-align: center;
-      margin-top: -1.5em;
-      font-size: 20px;
+    .dots {
+      display: flex;
+      justify-content: space-between;
+      margin: 0em auto;
+      width: 4.5%;
+
+      .dot {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 3px 15px 6px rgba(0,0,41,0.2); 
+        box-shadow: 0px 3px 15px 6px rgba(0,0,41,0.2);
+      }
+
+      .active,
+      .dot:hover {
+        background-color: vars.$color-orange-dark;
+        border: none;
+        
+      }
     }
 
     .team-container {
@@ -95,37 +111,36 @@ main {
   
         .team-card {
           width: 15em;
+          background-color: vars.$color-orange-light;
+          padding-bottom: 5em;
 
           img {
             margin-top: -7.5em;
             width: 15em;
           }
 
-          &:nth-child(odd) {
-            background-color: vars.$color-gray;
-          }
-          
-          &:nth-child(even) {
-            background-color: vars.$color-orange;
-          }
-
           .info {
             width: 90%;
             margin: -1em auto 0 auto;
 
-            .name {
+            .firstname,
+            .lastname {
               font-size: 25px;
               font-weight: vars.$font-weight-bold;
             }
 
+            .lastname {
+              margin-top: -1.2em;
+            }
+
             h5 {
-              font-size: 18px;
+              font-size: 24px;
               font-weight: vars.$font-weight-bold;
             }
 
             ul {
-              list-style-type: "- ";
-              margin-left: -2em;
+              list-style-type: disc;
+              margin-left: -1em;
               margin-top: -1.5em;
               li {
                 font-size: 18px;

@@ -29,6 +29,7 @@ header {
         justify-content: flex-end;
   
         li {
+
           &:last-child {
             margin-left: 20%;
           }
@@ -43,8 +44,7 @@ header {
 
             &:hover,
             &:focus {
-              // border-bottom: 5px solid vars.$color-orange;
-              background-color: vars.$color-orange;
+              background-color: vars.$color-orange-dark;
               color: vars.$color-white;
               
               &::after {
@@ -55,7 +55,7 @@ header {
 
           a.active {
             //border-bottom: 5px solid vars.$color-orange;
-            background-color: vars.$color-orange;
+            background-color: vars.$color-orange-dark;
             color: vars.$color-white;
 
             &::after {
