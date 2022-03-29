@@ -2,6 +2,7 @@
 // Buttons
 //
 
+@use '../abstracts/mediamixins' as media;
 @use '../abstracts/variables' as vars;
 
 .btn {
@@ -30,4 +31,10 @@
 
 .btn-small {
   padding: .5em 2em;
+}
+
+@include media.small {
+  .btn-regular {
+    
+  }
 }

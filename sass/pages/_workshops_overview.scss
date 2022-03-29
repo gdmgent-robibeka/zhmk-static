@@ -2,6 +2,7 @@
 // Workshops Overview
 //
 
+@use '../abstracts/mediamixins' as media;
 @use '../abstracts/mixins' as mix;
 @use '../abstracts/variables' as vars;
 
@@ -100,6 +101,15 @@ main.overview-page {
       .btn {
         margin-top: 1em;
       }
+    }
+  }
+}
+
+@include media.small {
+  main.overview-page {
+    .workshops-container {
+      gap: 1em;
+      grid-template-columns: 1fr;
     }
   }
 }

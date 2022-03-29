@@ -10,6 +10,12 @@
   font-size: 48px;
 }
 
+@mixin title-small($color: vars.$color-black) {
+  text-transform: uppercase;
+  color: $color;
+  font-size: 30px;
+}
+
 @mixin speechbubble($color: vars.$color-orange-dark) {
   content: '';
   position: absolute;

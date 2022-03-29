@@ -7,6 +7,9 @@
 @use '../abstracts/variables' as vars;
 
 header {
+  background-color: vars.$color-white;
+  z-index: 10;
+
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -87,6 +90,8 @@ header {
 @include media.small {
   header {
     position: sticky;
+    top: 0;
+    padding-bottom: .2em;
 
     .header-container {
       width: 95%;
@@ -95,12 +100,12 @@ header {
         margin-left: 0;
 
         .logo-artevelde {
-          margin-top: 0;
+          margin-top: 1em;
           width: 125px;
         }
 
         .logo {
-          width: 100px;
+          width: 125px;
           margin-left: -2em;
         }
       }
@@ -111,8 +116,51 @@ header {
 
       .hamburger {
         display: block;
-        margin-top: .5em;
+        margin-top: .75em;
+        margin-right: .5em;
         font-size: 30px;
+      }
+    }
+  }
+}
+
+@include media.medium {
+  header {
+    .header-container {
+      width: 95%;
+
+      .logo-block {
+        margin-left: 0;
+        width: 70%;
+
+        &:nth-child(2) {
+          margin-right: 5em;
+        }
+
+        .logo-artevelde {
+          margin-top: 0;
+          width: 80%;
+        }
+
+        .logo {
+          width: 60%;
+        }
+      }
+
+      nav {
+        width: 30%;
+        margin-top: 1em;
+
+        ul {
+          width: 20%;
+          margin-left: 10em;
+          li {
+            a {
+              font-size: 25px;
+              padding: .05em .5em;
+            }
+          }
+        }
       }
     }
   }

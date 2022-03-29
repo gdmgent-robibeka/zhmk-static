@@ -1,3 +1,6 @@
+/**
+ * Create Workshops Glider
+ */
 new Glider(document.getElementById('glider-workshops'), {
   slidesToShow: 1,
   draggable: true,
@@ -30,8 +33,11 @@ new Glider(document.getElementById('glider-workshops'), {
   ],
 });
 
+/**
+ * Create Team Glider
+ */
 new Glider(document.getElementById('glider-team'), {
-  slidesToShow: 1,
+  slidesToShow: 2,
   draggable: true,
   dots: '#dots-team',
   responsive: [
