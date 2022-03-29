@@ -9,7 +9,7 @@ main.detail-page {
   margin-top: 3em;
 
   .orange-block {
-    height: 980px;
+    height: 1000px;
     background-color: vars.$color-orange-medium;
     width: 12.5%;
     position: absolute;
@@ -31,10 +31,10 @@ main.detail-page {
     display: flex;
     justify-content: space-between;
     margin-top: 2em;
-    margin-right: 10em;
+    margin-right: 5em;
 
     .image-section {
-      width: 60%;
+      width: 55%;
       .top {
         margin-bottom: 1em;
         img {
@@ -45,15 +45,32 @@ main.detail-page {
       .bottom {
         display: flex;
 
+        .img-small1 {
+          width: 30%;
+        }
+
         .img-small2 {
-          width: 72%;
+          width: 68%;
           margin-left: 1em;
+        }
+      }
+
+      .sponsor {
+        width: 100%;
+        margin-left: 55%;
+
+        p {
+          text-transform: uppercase;
+        }
+
+        img {
+          width: 30%;
         }
       }
     }
 
     .text-section {
-      width: 30%;
+      width: 35%;
 
       h1 {
         font-size: 45px;
