@@ -168,8 +168,16 @@ main.detail-page {
       .workshop-selection {
         width: 50%;
 
+        .workshop-option {
+          margin-top: .5em;
+
+          label {
+            font-size: 18px;
+          }
+        }
+
         .location {
-          margin-top: 4.5em;
+          margin-top: 2.5em;
           margin-bottom: 3em;
 
           label {

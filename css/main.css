@@ -990,8 +990,14 @@ main.detail-page section.info .text-section p .bold {
 .form-section .form-container form .workshop-selection {
   width: 50%;
 }
+.form-section .form-container form .workshop-selection .workshop-option {
+  margin-top: 0.5em;
+}
+.form-section .form-container form .workshop-selection .workshop-option label {
+  font-size: 18px;
+}
 .form-section .form-container form .workshop-selection .location {
-  margin-top: 4.5em;
+  margin-top: 2.5em;
   margin-bottom: 3em;
 }
 .form-section .form-container form .workshop-selection .location label {
