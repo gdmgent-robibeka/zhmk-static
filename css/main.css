@@ -359,15 +359,14 @@ header .header-container {
 header .header-container .logo-block {
   margin-left: 3em;
 }
-header .header-container .logo-block:nth-child(2) {
-  margin-left: 5em;
-  margin-top: 1em;
-}
 header .header-container .logo-block .logo-artevelde {
-  width: 300px;
+  width: 200px;
+  margin-top: 2em;
 }
 header .header-container .logo-block .logo {
-  width: 70%;
+  width: 200px;
+  margin-left: 5em;
+  margin-top: 1em;
 }
 header .header-container nav {
   width: 30%;
@@ -427,7 +426,37 @@ header .header-container nav ul li a.active::after {
   margin-left: -0.312em;
   margin-bottom: -0.625em;
 }
+header .header-container .hamburger {
+  display: none;
+}
 
+@media (max-width: 767px) {
+  header {
+    position: sticky;
+  }
+  header .header-container {
+    width: 95%;
+  }
+  header .header-container .logo-block {
+    margin-left: 0;
+  }
+  header .header-container .logo-block .logo-artevelde {
+    margin-top: 0;
+    width: 125px;
+  }
+  header .header-container .logo-block .logo {
+    width: 100px;
+    margin-left: -2em;
+  }
+  header .header-container nav {
+    display: none;
+  }
+  header .header-container .hamburger {
+    display: block;
+    margin-top: 0.5em;
+    font-size: 30px;
+  }
+}
 footer {
   background-color: #91A1BB;
   margin-top: 5em;
@@ -497,7 +526,7 @@ main.homepage .intro {
   justify-content: space-between;
 }
 main.homepage .intro .image-section .home-intro {
-  width: 700px;
+  width: 85%;
 }
 main.homepage .intro .text-section {
   width: 40%;
@@ -513,7 +542,7 @@ main.homepage .intro .text-section p {
   margin-top: -1em;
 }
 main.homepage .orange-block {
-  height: 980px;
+  height: 1000px;
   background-color: #F9B784;
   width: 12.5%;
   position: absolute;
@@ -531,17 +560,31 @@ main.homepage .workshops .workshops-container {
   width: 75%;
   margin-left: 12.5%;
   margin-top: -1em;
-  padding: 2em 0 2em 7.5em;
+  padding: 2em 1em 1em 7.5em;
 }
-main.homepage .workshops .workshops-container .workshops-cards {
-  display: flex;
-  justify-content: space-between;
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
+  margin-top: -1em;
+  margin-bottom: 2em;
 }
-main.homepage .workshops .workshops-container .workshops-cards .workshops-card {
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  -webkit-box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
+  box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
+  background: none !important;
+}
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot.active, main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot:hover, main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot:focus {
+  background: #F69142 !important;
+}
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card {
   width: 33%;
+  margin-right: 1em;
 }
-main.homepage .workshops .workshops-container .workshops-cards .workshops-card p {
-  width: 90%;
+main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider .workshops-card img {
+  max-width: 100%;
+  height: 45%;
+  object-fit: cover;
+  object-position: 0 0;
 }
 main.homepage .team h2 {
   text-transform: uppercase;
@@ -550,49 +593,31 @@ main.homepage .team h2 {
   text-align: center;
   margin-top: 2em;
 }
-main.homepage .team .dots {
-  display: flex;
-  justify-content: space-between;
-  margin: 0em auto;
-  width: 4.5%;
-}
-main.homepage .team .dots .dot {
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
-  box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
-}
-main.homepage .team .dots .active,
-main.homepage .team .dots .dot:hover {
-  background-color: #F69142;
-  border: none;
-}
-main.homepage .team .glider-contain {
+main.homepage .team .glider-contain.glider-contain-team {
   width: 90% !important;
   margin: 5em auto 0 auto;
 }
-main.homepage .team .glider-contain .glider-dots {
+main.homepage .team .glider-contain.glider-contain-team .glider-dots {
   margin-top: -2em;
   margin-bottom: 2em;
 }
-main.homepage .team .glider-contain .glider-dots .glider-dot {
+main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
   width: 2em !important;
   height: 2em !important;
   -webkit-box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
   box-shadow: 0px 3px 15px 6px rgba(0, 0, 41, 0.2);
   background: none !important;
 }
-main.homepage .team .glider-contain .glider-dots .glider-dot.active, main.homepage .team .glider-contain .glider-dots .glider-dot:hover, main.homepage .team .glider-contain .glider-dots .glider-dot:focus {
+main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot.active, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:hover, main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot:focus {
   background: #F69142 !important;
 }
-main.homepage .team .glider-contain .glider .team-card {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card {
   width: 20em !important;
   background-color: #F9B784;
   padding-bottom: 5em;
   margin: 8em 1em 0 1em;
 }
-main.homepage .team .glider-contain .glider .team-card img {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
   margin-top: -7.5em;
   width: 100%;
   height: 35%;
@@ -600,41 +625,51 @@ main.homepage .team .glider-contain .glider .team-card img {
   object-fit: cover;
   object-position: 0 0;
 }
-main.homepage .team .glider-contain .glider .team-card .info {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info {
   width: 90%;
   margin: -1em auto 0 auto;
 }
-main.homepage .team .glider-contain .glider .team-card .info .firstname,
-main.homepage .team .glider-contain .glider .team-card .info .lastname {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .firstname,
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .lastname {
   font-size: 32px;
   font-weight: 700;
 }
-main.homepage .team .glider-contain .glider .team-card .info .lastname {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info .lastname {
   margin-top: -1.2em;
 }
-main.homepage .team .glider-contain .glider .team-card .info h5 {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info h5 {
   font-size: 24px;
   font-weight: 700;
 }
-main.homepage .team .glider-contain .glider .team-card .info ul {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul {
   list-style-type: disc;
   margin-left: -1em;
   margin-top: -1.5em;
 }
-main.homepage .team .glider-contain .glider .team-card .info ul li {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info ul li {
   font-size: 18px;
 }
-main.homepage .team .glider-contain .glider .team-card .info p {
+main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info p {
   font-size: 18px;
   margin-top: -1.5em;
 }
 
 @media (max-width: 767px) {
+  main.homepage .intro {
+    width: 95%;
+    display: block;
+  }
+  main.homepage .orange-block {
+    display: none;
+  }
+  main.homepage .workshops {
+    display: none;
+  }
   main.homepage .glider .team-card img {
     height: 35%;
   }
 }
-section.intro h1 {
+section.intro > h1 {
   text-transform: uppercase;
   color: #000000;
   font-size: 48px;
@@ -678,6 +713,7 @@ main.overview-page .workshops-container .workshop {
 }
 main.overview-page .workshops-container .workshop img {
   max-width: 100%;
+  height: 42.5%;
 }
 main.overview-page .workshops-container .workshop .category {
   position: absolute;

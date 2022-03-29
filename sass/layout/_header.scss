@@ -2,6 +2,7 @@
 // Header
 //
 
+@use '../abstracts/mediamixins' as media;
 @use '../abstracts//mixins' as mix;
 @use '../abstracts/variables' as vars;
 
@@ -15,17 +16,15 @@ header {
     .logo-block {
       margin-left: 3em;
 
-      &:nth-child(2) {
-        margin-left: 5em;
-        margin-top: 1em;
-      }
-
       .logo-artevelde {
-        width: 300px;
+        width: 200px;
+        margin-top: 2em;
       }
 
       .logo {
-        width: 70%;
+        width: 200px;
+        margin-left: 5em;
+        margin-top: 1em;
       }
     }
 
@@ -76,6 +75,44 @@ header {
             }
           }
         }
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+}
+
+@include media.small {
+  header {
+    position: sticky;
+
+    .header-container {
+      width: 95%;
+
+      .logo-block {
+        margin-left: 0;
+
+        .logo-artevelde {
+          margin-top: 0;
+          width: 125px;
+        }
+
+        .logo {
+          width: 100px;
+          margin-left: -2em;
+        }
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+        margin-top: .5em;
+        font-size: 30px;
       }
     }
   }
