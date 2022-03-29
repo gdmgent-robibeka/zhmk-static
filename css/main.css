@@ -359,6 +359,13 @@ header .header-container {
 header .header-container .logo-block {
   margin-left: 3em;
 }
+header .header-container .logo-block:nth-child(2) {
+  margin-left: 5em;
+  margin-top: 1em;
+}
+header .header-container .logo-block .logo-artevelde {
+  width: 300px;
+}
 header .header-container .logo-block .logo {
   width: 70%;
 }
@@ -371,7 +378,7 @@ header .header-container nav ul {
   justify-content: flex-end;
 }
 header .header-container nav ul li:last-child {
-  margin-left: 20%;
+  margin-left: 10%;
 }
 header .header-container nav ul li a {
   font-size: 30px;
@@ -380,6 +387,9 @@ header .header-container nav ul li a {
   padding: 0.05em 0.5em;
   border-radius: 0.3em;
   position: relative;
+  display: block;
+  min-width: 100px;
+  text-align: center;
 }
 header .header-container nav ul li a:hover, header .header-container nav ul li a:focus {
   background-color: #F69142;
@@ -485,9 +495,6 @@ main.homepage .intro {
   margin: 3em auto;
   display: flex;
   justify-content: space-between;
-}
-main.homepage .intro .image-section {
-  flex-shrink: 0;
 }
 main.homepage .intro .image-section .home-intro {
   width: 700px;
