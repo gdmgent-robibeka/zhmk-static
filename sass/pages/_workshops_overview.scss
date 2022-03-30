@@ -53,10 +53,9 @@ main.overview-page {
     .workshop {
       width: 100%;
       position: relative;
-      display: none;
 
-      &.show {
-        display: block
+      &.hide {
+        display: none
       }
       
       img {

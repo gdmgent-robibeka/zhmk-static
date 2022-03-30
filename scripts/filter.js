@@ -16,10 +16,10 @@ function filterCategories()  {
     //   workshop.classList.remove('hide');
     //   workshop.classList.add('hide');
     // }
-    workshop.classList.remove('show');
+    workshop.classList.remove('hide');
 
-    if(workshop.classList.contains(option)) {
-      workshop.classList.add('show');
+    if(!workshop.classList.contains(option)) {
+      workshop.classList.add('hide');
     }
   });
 }
