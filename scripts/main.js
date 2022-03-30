@@ -71,7 +71,6 @@ new Glider(document.getElementById('glider-team'), {
 /**
  * Toggle Navigation Hamburger
  */
-
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 

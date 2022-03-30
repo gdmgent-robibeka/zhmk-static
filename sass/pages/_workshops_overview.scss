@@ -53,6 +53,11 @@ main.overview-page {
     .workshop {
       width: 100%;
       position: relative;
+      display: none;
+
+      &.show {
+        display: block
+      }
       
       img {
         max-width: 100%;
@@ -93,10 +98,6 @@ main.overview-page {
       .bold {
         font-weight: vars.$font-weight-bold;
       }
-
-      // a {
-      //   color: vars.$color-black;
-      // }
 
       .btn {
         margin-top: 1em;

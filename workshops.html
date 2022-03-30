@@ -48,6 +48,7 @@
         <div class="categories search-field">
           <label for="categories">Categorieën</label>
           <select name="categories" id="categories">
+            <option value="all">Alle</option>
             <option value="3d">3D</option>
             <option value="code">Code</option>
             <option value="sound">Geluid</option>
@@ -62,11 +63,11 @@
 
   <main class="overview-page">
     <div class="workshops-container">
-      <div class="workshop">
+      <div class="workshop 3d all">
         <a href="./workshops/3d.html">
           <img src="./images/workshops-overview/3d.jpg" alt="Computer working space with 3D printer">
         </a>
-        <div class="category 3D">3D</div>
+        <div class="category">3D</div>
         <h2 class="title">Zeg het met 3D</h2>
         <p class="description">
           Tijdens deze workshop maak je kennis met 3D-printing. Je leert zelf een object modelleren en klaarmaken om te 3D-printen. 
@@ -91,11 +92,11 @@
         </button>
       </div>
       
-      <div class="workshop">
+      <div class="workshop image all">
         <a href="./workshops/beeld.html">
           <img src="./images/workshops-overview/beeld.jpg" alt="Pile of books">
         </a>
-        <div class="category image">Beeld</div>
+        <div class="category">Beeld</div>
         <h2 class="title">Vertel het met... Beeld!</h2>
         <p class="description">
           Hoge kwaliteitsvideo’s maken met enkel je smartphone? Het kan! We zien het dagelijks passeren op TikTok en 
@@ -121,11 +122,11 @@
         </button>
       </div>
       
-      <div class="workshop">
+      <div class="workshop code all">
         <a href="./workshops/creative-programming.html">
           <img src="./images/workshops-overview/creative-programming.jpg" alt="Code on computer screen">
         </a>
-        <div class="category code">Code</div>
+        <div class="category">Code</div>
         <h2 class="title">Start to Code: Creative Programming</h2>
         <p class="description">
           Deze workshop zoomt in op het leren programmeren door creatieve, visuele en interactieve 
@@ -150,11 +151,11 @@
         </button>
       </div>
 
-      <div class="workshop">
+      <div class="workshop code all">
         <a href="./workshops/wot.html">
           <img src="./images/workshops-overview/wot.jpg" alt="Code on computer screen">
         </a>
-        <div class="category code">Code</div>
+        <div class="category">Code</div>
         <h2 class="title">Start to Code: Web of Things</h2>
         <p class="description">
           Deze workshop zoomt in op het leren programmeren door software met hardware te combineren. Om hardware toegankelijk te 
@@ -180,11 +181,11 @@
         </button>
       </div>
 
-      <div class="workshop">
+      <div class="workshop sound all">
         <a href="./workshops/geluid.html">
           <img src="./images/workshops-overview/geluid.jpg" alt="Soundwave editing">
         </a>
-        <div class="category sound">Geluid</div>
+        <div class="category">Geluid</div>
         <h2 class="title">Vertel het met... Geluid!</h2>
         <p class="description">
           Podcasts, interviews, storybooks… Geluid is overal. In deze workshop dompelen we jongeren onder in het 
@@ -210,11 +211,11 @@
         </button>
       </div>
 
-      <div class="workshop">
+      <div class="workshop color all">
         <a href="./workshops/kleur.html">
           <img src="./images/workshops-overview/oog-op-kleur.jpg" alt="Printing">
         </a>
-        <div class="category color">Kleur</div>
+        <div class="category">Kleur</div>
         <h2 class="title">Zeg het met kleur: Een oog op kleur</h2>
         <p class="description">
           Een oog op kleur wordt verduidelijkt op welke manier we kleuren zien, beoordelen en erover communiceren. 
@@ -240,11 +241,11 @@
         </button>
       </div>
 
-      <div class="workshop">
+      <div class="workshop color all">
         <a href="./workshops/onderneming.html">
           <img src="./images/workshops-overview/onderneming.jpg" alt="Checking colors" class="crosp">
         </a>
-        <div class="category color">Kleur</div>
+        <div class="category">Kleur</div>
         <h2 class="title">Zeg het met kleur: Zet je onderneming in kleur</h2>
         <p class="description">
           Tijdens de workshop zoeken we uit wat de commerciële troeven van kleur zijn voor een onderneming en 
@@ -269,11 +270,11 @@
         </button>
       </div>
 
-      <div class="workshop">
+      <div class="workshop color all">
         <a href="./workshops/print.html">
           <img src="./images/workshops-overview/druk.jpg" alt="Printing press">
         </a>
-        <div class="category color">Kleur</div>
+        <div class="category">Kleur</div>
         <h2 class="title">Zeg het met kleur: Jouw kleurproject in druk</h2>
         <p class="description">
           Wil je ontdekken op welke manier we kleuren zien, beoordelen en erover communiceren? 
@@ -299,11 +300,11 @@
         </button>
       </div>
 
-      <div class="workshop">
+      <div class="workshop media all">
         <a href="./workshops/deepfake.html">
           <img src="./images/workshops-overview/deepfake.jpg" alt="Deepfake in dictionary">
         </a>
-        <div class="category media">Media</div>
+        <div class="category">Media</div>
         <h2 class="title">Deepdive into Deepfakes</h2>
         <p class="description">
           Duik eens in een deepfakes! Vertrekkende vanuit een korte inleiding rond wat machine learning is, willen we 
@@ -328,7 +329,7 @@
         </button>
       </div>
       
-      <div class="workshop">
+      <div class="workshop extra all">
         <a href="./workshops/extra.html">
           <img src="./images/workshops-overview/extra.jpg" alt="Students in auditorium">
         </a>
@@ -378,5 +379,7 @@
       </p>
     </div>
   </footer>
+
+  <script src="./scripts/filter.js"></script>
 </body>
 </html>
