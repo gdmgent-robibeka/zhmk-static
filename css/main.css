@@ -1154,4 +1154,132 @@ main.detail-page section.info .text-section p .bold {
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  main.detail-page .orange-block {
+    display: none;
+  }
+  main.detail-page .info-container {
+    width: 100%;
+  }
+  main.detail-page .info-container .return {
+    margin-left: 1.5em;
+  }
+  main.detail-page section.info {
+    flex-direction: column;
+  }
+  main.detail-page section.info .image-section {
+    width: 100vw;
+  }
+  main.detail-page section.info .image-section .bottom {
+    display: none;
+  }
+  main.detail-page section.info .image-section .sponsor {
+    margin-left: 40%;
+  }
+  main.detail-page section.info .image-section .sponsor img {
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+  main.detail-page section.info .text-section {
+    width: 100%;
+    margin: 2em;
+  }
+  main.detail-page section.info .text-section h1 {
+    font-size: 36px;
+  }
+
+  .form-section h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+  .form-section .form-container {
+    flex-direction: column;
+    padding: 1em 0 1em 1em;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .form-section .form-container .img {
+    display: none;
+  }
+  .form-section .form-container form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-section .form-container form .personal,
+.form-section .form-container form .workshop-selection {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .form-section .form-container form .personal input {
+    width: 90%;
+  }
+  .form-section .form-container form .personal .available-options select {
+    min-width: 27.5%;
+  }
+  .form-section .form-container form .personal .citycode {
+    width: 62.5%;
+  }
+  .form-section .form-container form .workshop-selection .location select {
+    width: 90%;
+  }
+  .form-section .form-container form .workshop-selection .remarks textarea {
+    width: 90%;
+  }
+  .form-section .form-container .practical {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  main.detail-page .orange-block {
+    height: 1200px;
+  }
+  main.detail-page .info-container .return {
+    margin-left: 4em;
+  }
+  main.detail-page section.info {
+    margin-right: 0;
+  }
+  main.detail-page section.info .image-section .bottom .img-small1 {
+    display: none;
+  }
+  main.detail-page section.info .image-section .bottom .img-small2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  main.detail-page section.info .image-section .sponsor {
+    margin-left: 30%;
+  }
+  main.detail-page section.info .text-section {
+    width: 40%;
+  }
+
+  .form-section h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .form-section .form-container {
+    flex-direction: column;
+    padding: 1em 1em 1em 1em;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .form-section .form-container .img {
+    display: none;
+  }
+  .form-section .form-container form {
+    width: 100%;
+  }
+  .form-section .form-container .practical {
+    width: 90%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
