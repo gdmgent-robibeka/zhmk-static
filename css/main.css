@@ -945,9 +945,41 @@ main.overview-page .workshops-container .workshop .btn {
 }
 
 @media (max-width: 767px) {
+  section.intro > h1 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+  }
+  section.intro .searchbar-container {
+    flex-direction: column;
+    padding: 1em 0;
+  }
+  section.intro .searchbar-container .keyword {
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+  }
+  section.intro .searchbar-container .search-field input,
+section.intro .searchbar-container .search-field select {
+    width: 100%;
+  }
+
   main.overview-page .workshops-container {
-    gap: 1em;
     grid-template-columns: 1fr;
+    gap: 6em;
+    margin-bottom: 10em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  section.intro > h1 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+  }
+
+  main.overview-page .workshops-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 5em 1em;
+    margin-bottom: 10em;
   }
 }
 main.detail-page {
