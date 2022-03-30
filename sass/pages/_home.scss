@@ -36,7 +36,7 @@ main.homepage {
   }
 
   .orange-block {
-    height: 1000px;
+    height: 1350px;
     background-color: vars.$color-orange-medium;
     width: 12.5%;
     position: absolute;
@@ -182,7 +182,7 @@ main.homepage {
 @include media.small {
   main.homepage {
     .intro {
-      width: 90%;
+      width: 100%;
       display: block;
 
       .image-section {
@@ -196,7 +196,8 @@ main.homepage {
       }
 
       .text-section {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         margin-top: 2em;
 
         h1 {
@@ -214,9 +215,31 @@ main.homepage {
       display: none;
     }
 
-    // TODO!!
     .workshops {
-      display: none;
+      width: 90%;
+      margin: 0 auto;
+
+      h2 {
+        @include mix.title-small();
+        margin-left: 0;
+      }
+
+      .workshops-container {
+        width: 90%;
+        margin-left: 0;
+        padding: .5em 1em 0 1em;
+
+        .glider-contain.glider-contain-workshops {
+          .glider-dots {
+            margin-top: 1em;
+
+            .glider-dot {
+              width: 1em !important;
+              height: 1em !important;
+            }
+          }
+        }
+      }
     }
 
     .team {
@@ -239,21 +262,16 @@ main.homepage {
         .glider {
           .team-card {
             width: 25em !important;
-            margin: 8em .5em 0 .5em;
+            margin: 6em .5em 0 .5em;
 
             img {
-              height: 20%;
-              // margin-top: 0em;
-            }
-
-            .info {
-
+              height: 30%;
+              margin-top: -5.5em;
             }
           }
         }
       }
     }
-
   }
 }
 
@@ -261,12 +279,62 @@ main.homepage {
   main.homepage {
     .intro {
       width: 95%;
-      display: block;
+      
+      .text-section {
+        h1 {
+          @include mix.title-medium();
+        }
+      }
     }
 
-    // TODO
+    .orange-block {
+      height: 1100px
+    }
+
     .workshops {
-      display: none;
+      h2 {
+        @include mix.title-medium();
+        margin-left: 5em;
+      }
+
+      .workshops-container {
+        padding: .5em 1em 1em 1em;
+
+        .glider-contain.glider-contain-workshops {
+          .glider-dots {
+            margin-top: 1em;
+
+            .glider-dot {
+              width: 1.5em !important;
+              height: 1.5em !important;
+            }
+          }
+        }
+      }
+    }
+
+    .team {
+      h2 {
+        @include mix.title-medium();
+      }
+
+      .glider-contain.glider-contain-team {
+        .glider-dots {
+          .glider-dot {
+            width: 1.5em !important;
+            height: 1.5em !important;
+          }
+        }
+
+        .glider {
+          .team-card {
+            img {
+              height: 35%;
+              margin-top: -6em;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -91,7 +91,6 @@ header {
   header {
     position: sticky;
     top: 0;
-    padding-bottom: .2em;
 
     .header-container {
       width: 95%;
@@ -112,6 +111,32 @@ header {
 
       nav {
         display: none;
+        width: 100%;
+        margin-left: -7.5em;
+        margin-top: 6em;
+        z-index: 20;
+
+        ul {
+          width: 100%;
+          flex-direction: column;
+
+          li {
+            &:last-child {
+              margin-left: 0;
+              margin-top: 1em;
+            }
+
+            a {
+              font-size: 20px;
+              width: 50px;
+              text-align: center;
+            }
+          }
+        }
+
+        &.toggled {
+          display: flex;
+        }
       }
 
       .hamburger {

@@ -438,7 +438,6 @@ header .header-container .hamburger {
   header {
     position: sticky;
     top: 0;
-    padding-bottom: 0.2em;
   }
   header .header-container {
     width: 95%;
@@ -456,6 +455,26 @@ header .header-container .hamburger {
   }
   header .header-container nav {
     display: none;
+    width: 100%;
+    margin-left: -7.5em;
+    margin-top: 6em;
+    z-index: 20;
+  }
+  header .header-container nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header .header-container nav ul li:last-child {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  header .header-container nav ul li a {
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+  }
+  header .header-container nav.toggled {
+    display: flex;
   }
   header .header-container .hamburger {
     display: block;
@@ -533,6 +552,28 @@ footer .footer-container p {
   color: #FFFFFF;
 }
 
+@media (max-width: 767px) {
+  footer .footer-container h2 {
+    font-size: 32px;
+  }
+  footer .footer-container ul li a {
+    font-size: 24px;
+  }
+  footer .footer-container p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer .footer-container h2 {
+    font-size: 40px;
+  }
+  footer .footer-container ul li a {
+    font-size: 28px;
+  }
+  footer .footer-container p {
+    font-size: 18px;
+  }
+}
 .btn {
   border: 3px solid #000000;
   cursor: pointer;
@@ -583,7 +624,7 @@ main.homepage .intro .text-section p {
   margin-top: -1em;
 }
 main.homepage .orange-block {
-  height: 1000px;
+  height: 1350px;
   background-color: #F9B784;
   width: 12.5%;
   position: absolute;
@@ -697,7 +738,7 @@ main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info
 
 @media (max-width: 767px) {
   main.homepage .intro {
-    width: 90%;
+    width: 100%;
     display: block;
   }
   main.homepage .intro .image-section {
@@ -709,7 +750,8 @@ main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info
     width: 100%;
   }
   main.homepage .intro .text-section {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 2em;
   }
   main.homepage .intro .text-section h1 {
@@ -725,7 +767,26 @@ main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info
     display: none;
   }
   main.homepage .workshops {
-    display: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main.homepage .workshops h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 30px;
+    margin-left: 0;
+  }
+  main.homepage .workshops .workshops-container {
+    width: 90%;
+    margin-left: 0;
+    padding: 0.5em 1em 0 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
+    margin-top: 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot {
+    width: 1em !important;
+    height: 1em !important;
   }
   main.homepage .team {
     margin-top: -1em;
@@ -744,19 +805,53 @@ main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card {
     width: 25em !important;
-    margin: 8em 0.5em 0 0.5em;
+    margin: 6em 0.5em 0 0.5em;
   }
   main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
-    height: 20%;
+    height: 30%;
+    margin-top: -5.5em;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   main.homepage .intro {
     width: 95%;
-    display: block;
   }
-  main.homepage .workshops {
-    display: none;
+  main.homepage .intro .text-section h1 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+  }
+  main.homepage .orange-block {
+    height: 1100px;
+  }
+  main.homepage .workshops h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+    margin-left: 5em;
+  }
+  main.homepage .workshops .workshops-container {
+    padding: 0.5em 1em 1em 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots {
+    margin-top: 1em;
+  }
+  main.homepage .workshops .workshops-container .glider-contain.glider-contain-workshops .glider-dots .glider-dot {
+    width: 1.5em !important;
+    height: 1.5em !important;
+  }
+  main.homepage .team h2 {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider-dots .glider-dot {
+    width: 1.5em !important;
+    height: 1.5em !important;
+  }
+  main.homepage .team .glider-contain.glider-contain-team .glider .team-card img {
+    height: 35%;
+    margin-top: -6em;
   }
 }
 section.intro > h1 {

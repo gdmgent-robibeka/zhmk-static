@@ -2,6 +2,7 @@
 // Footer
 //
 
+@use '../abstracts/mediamixins' as media;
 @use '../abstracts/variables' as vars;
 
 footer {
@@ -50,3 +51,48 @@ footer {
     }
   }
 }
+
+@include media.small {
+  footer {
+    .footer-container {
+      h2 {
+        font-size: 32px;
+      }
+
+      ul {
+        li {
+          a {
+            font-size: 24px;
+          }
+        }
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include media.medium {
+  footer {
+    .footer-container {
+      h2 {
+        font-size: 40px;
+      }
+
+      ul {
+        li {
+          a {
+            font-size: 28px;
+          }
+        }
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
