@@ -121,6 +121,10 @@ main.detail-page {
       justify-content: space-between;
       width: 50%;
 
+      .required {
+        color: vars.$color-orange-dark;
+      }
+
       .personal {
         width: 50%;
 
@@ -158,6 +162,10 @@ main.detail-page {
           .postal_code,
           .city {
             width: 20%;
+
+            label {
+              width: 450%;
+            }
             
             input {
               width: 325%;

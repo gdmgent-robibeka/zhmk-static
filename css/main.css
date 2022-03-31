@@ -611,6 +611,7 @@ main.homepage .intro .image-section {
 main.homepage .intro .image-section .home-intro {
   width: 85%;
   height: 100%;
+  z-index: 10;
 }
 main.homepage .intro .text-section {
   width: 40%;
@@ -1088,6 +1089,9 @@ main.detail-page section.info .text-section p .bold {
   justify-content: space-between;
   width: 50%;
 }
+.form-section .form-container form .required {
+  color: #F69142;
+}
 .form-section .form-container form .personal {
   width: 50%;
 }
@@ -1118,6 +1122,10 @@ main.detail-page section.info .text-section p .bold {
 .form-section .form-container form .personal .citycode .postal_code,
 .form-section .form-container form .personal .citycode .city {
   width: 20%;
+}
+.form-section .form-container form .personal .citycode .postal_code label,
+.form-section .form-container form .personal .citycode .city label {
+  width: 450%;
 }
 .form-section .form-container form .personal .citycode .postal_code input,
 .form-section .form-container form .personal .citycode .city input {

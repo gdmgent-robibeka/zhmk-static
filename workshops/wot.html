@@ -132,19 +132,19 @@
       </div>
     
 
-      <form action="">
+      <form action="../scripts/contact-form.php" method="POST">
         <div class="personal">
           <div class="name">
-            <label for="name">Naam</label>
-            <input type="text" name="name" id="name" placeholder="Naam">
+            <label for="name">Naam <span class="required">*</span></label>
+            <input type="text" name="name" id="name" placeholder="Naam" required>
           </div>
           <div class="firstname">
-            <label for="firstname">Voornaam</label>
-            <input type="text" name="firstname" id="firstname" placeholder="Voornaam">
+            <label for="firstname">Voornaam <span class="required">*</span></label>
+            <input type="text" name="firstname" id="firstname" placeholder="Voornaam" required>
           </div>
           <div class="phone">
-            <label for="phone">Telefoonnumer</label>
-            <input type="tel" name="phone" id="phone" placeholder="+32 470 00 00 00">
+            <label for="phone">Telefoonnumer <span class="required">*</span></label>
+            <input type="tel" name="phone" id="phone" placeholder="+32 470 00 00 00" required>
           </div>
           <div class="available">
             <label for="available">Best bereikbaar op... tussen...</label>
@@ -183,35 +183,35 @@
             </div>
           </div>
           <div class="email">
-            <label for="email">E-mailadres</label>
-            <input type="email" name="email" id="email" placeholder="naam@email.com">
+            <label for="email">E-mailadres <span class="required">*</span></label>
+            <input type="email" name="email" id="email" placeholder="naam@email.com" required>
           </div>
           <div class="school">
-            <label for="school">Naam van de school</label>
-            <input type="text" name="school" id="school" placeholder="Naam van de school">
+            <label for="school">Naam van de school <span class="required">*</span></label>
+            <input type="text" name="school" id="school" placeholder="Naam van de school" required>
           </div>
           <div class="function">
-            <label for="function">Functie binnen uw school</label>
-            <input type="text" name="function" id="function" placeholder="Functie">
+            <label for="function">Functie binnen uw school <span class="required">*</span></label>
+            <input type="text" name="function" id="function" placeholder="Functie" required>
           </div>
           <div class="address">
-            <label for="address">Adres van uw school</label>
-            <input type="text" name="address" id="address" placeholder="Straat + nummer">
+            <label for="address">Adres van uw school <span class="required">*</span></label>
+            <input type="text" name="address" id="address" placeholder="Straat + nummer" required>
           </div>
           <div class="citycode">
             <div class="postal_code">
-              <label for="postal_code">Postcode</label>
-              <input type="text" name="postal_code" id="postal_code" placeholder="Postcode">
+              <label for="postal_code">Postcode <span class="required">*</span></label>
+              <input type="text" name="postal_code" id="postal_code" placeholder="Postcode" required>
             </div>
             <div class="city">
-              <label for="city">Gemeente</label>
-              <input type="text" name="city" id="city" placeholder="Gemeente">
+              <label for="city">Gemeente <span class="required">*</span></label>
+              <input type="text" name="city" id="city" placeholder="Gemeente" required>
             </div>
           </div>
         </div>
 
         <div class="workshop-selection">
-          <p class="bold">Selecteer de workshop(s)</p>
+          <p class="bold">Selecteer de workshop(s) <span class="required">*</span></p>
           <div class="3D workshop-option">
             <input type="checkbox" name="3D" id="3D">
             <label for="3D">Zeg het met 3D</label>
@@ -254,10 +254,10 @@
           </div>
 
           <div class="location">
-            <label for="location">Selecteer de locatie voor workshops</label>
+            <label for="location">Selecteer de locatie voor workshops <span class="required">*</span></label>
             <select name="location" id="location">
-              <option value="own">Eigen school</option>
-              <option value="mediacampus">Mediacampus Arteveldehogeschool</option>
+              <option value="eigen school">Eigen school</option>
+              <option value="Mediacampus Arteveldehogeschool">Mediacampus Arteveldehogeschool</option>
             </select>
           </div>
 
