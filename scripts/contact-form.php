@@ -58,8 +58,6 @@ if (isset($_POST['email'])) {
         'Content-Type: text/plain; charset=utf-8' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     mail($email_to, $email_subject, $email_message, $headers);
-
-    echo $email_message;
 }
 header('Location: ../form-submitted.html');
 die();
