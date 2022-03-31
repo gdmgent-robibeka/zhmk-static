@@ -346,3 +346,10 @@ main.homepage {
     }
   }
 }
+
+@include media.xlarge {
+  main.homepage {
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+}

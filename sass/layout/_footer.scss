@@ -96,3 +96,11 @@ footer {
   }
 }
 
+@include media.xlarge {
+  footer {
+    .footer-container {
+      max-width: 1750px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -17,7 +17,13 @@
 }
 
 @mixin large {
-  @media (min-width: #{vars.$width-large}) {
+  @media (min-width: #{vars.$width-large}) and (max-width: #{vars.$width-xlarge - 1px}) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media (min-width: #{vars.$width-xlarge}) {
     @content;
   }
 }

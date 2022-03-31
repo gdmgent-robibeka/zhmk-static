@@ -405,3 +405,15 @@ main.detail-page {
 
   }
 }
+
+@include media.xlarge {
+  main.detail-page {
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+
+  .form-section {
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+}

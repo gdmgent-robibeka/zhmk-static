@@ -455,8 +455,8 @@ header .header-container .hamburger {
   }
   header .header-container nav {
     display: none;
-    width: 100%;
-    margin-left: -7.5em;
+    width: 20%;
+    margin-left: -5em;
     margin-top: 6em;
     z-index: 20;
   }
@@ -512,6 +512,12 @@ header .header-container .hamburger {
   header .header-container nav ul li a {
     font-size: 25px;
     padding: 0.05em 0.5em;
+  }
+}
+@media (min-width: 1920px) {
+  header .header-container {
+    max-width: 1750px;
+    margin: 0 auto;
   }
 }
 footer {
@@ -572,6 +578,12 @@ footer .footer-container p {
   }
   footer .footer-container p {
     font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  footer .footer-container {
+    max-width: 1750px;
+    margin: 0 auto;
   }
 }
 .btn {
@@ -861,6 +873,12 @@ main.homepage .team .glider-contain.glider-contain-team .glider .team-card .info
     margin-top: -6em;
   }
 }
+@media (min-width: 1920px) {
+  main.homepage {
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+}
 section.intro > h1 {
   text-transform: uppercase;
   color: #000000;
@@ -990,6 +1008,17 @@ section.intro .searchbar-container .search-field select {
     grid-template-columns: 1fr 1fr;
     gap: 5em 1em;
     margin-bottom: 10em;
+  }
+}
+@media (min-width: 1920px) {
+  section.intro {
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+
+  main.overview-page {
+    max-width: 1750px;
+    margin: 0 auto;
   }
 }
 main.detail-page {
@@ -1296,6 +1325,17 @@ main.detail-page section.info .text-section p .bold {
   }
   .form-section .form-container .practical {
     width: 90%;
+  }
+}
+@media (min-width: 1920px) {
+  main.detail-page {
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+
+  .form-section {
+    max-width: 1750px;
+    margin: 0 auto;
   }
 }
 main.form-submitted h1 {

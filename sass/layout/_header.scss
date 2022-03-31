@@ -111,8 +111,8 @@ header {
 
       nav {
         display: none;
-        width: 100%;
-        margin-left: -7.5em;
+        width: 20%;
+        margin-left: -5em;
         margin-top: 6em;
         z-index: 20;
 
@@ -187,6 +187,15 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+@include media.xlarge {
+  header {
+    .header-container {
+      max-width: 1750px;
+      margin: 0 auto;
     }
   }
 }

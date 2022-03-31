@@ -155,3 +155,15 @@ main.overview-page {
     }
   }
 }
+
+@include media.xlarge {
+  section.intro {
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+
+  main.overview-page {
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+}
