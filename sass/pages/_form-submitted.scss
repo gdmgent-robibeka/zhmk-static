@@ -1,0 +1,13 @@
+//
+// Form submitted
+//
+
+@use '../abstracts/mixins' as mix;
+
+main.form-submitted {
+  h1 {
+    @include mix.title();
+    text-align: center;
+    margin: 12.5% 0;
+  }
+}

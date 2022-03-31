@@ -58,9 +58,8 @@ if (isset($_POST['email'])) {
         'X-Mailer: PHP/' . phpversion();
     mail($email_to, $email_subject, $email_message, $headers);
 
-    header('Content-type: text/plain');
     echo $email_message;
 }
-header('Location: ../workshops.html');
+header('Location: ../form-submitted.html');
 die();
 ?>
